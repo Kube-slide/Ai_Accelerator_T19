@@ -1,0 +1,56 @@
+﻿"Employee wages by industry, annual 1 2"
+"Frequency: Annual"
+"Table: 14-10-0064-01 (formerly CANSIM 282-0072)"
+"Release date: 2024-01-05"
+"Geography: Canada, Province or territory"
+""
+""
+
+"Geography 3","Quebec",,,,
+"Wages 4","Average hourly wage rate",,,,
+"Type of work","Both full- and part-time employees",,,,
+"Sex","Both sexes",,,,
+"Age group","15 years and over",,,,
+"North American Industry Classification System (NAICS) 5","2019","2020","2021","2022","2023"
+,"Current dollars",,,,
+"Total employees, all industries 6","26.91","28.56","29.27","30.96","32.39"
+"Goods-producing sector 7","28.66","29.99","30.08","32.28","34.51"
+"Agriculture 8","18.34","19.46","19.18","20.78","21.11"
+"Forestry, fishing, mining, quarrying, oil and gas 9 10","35.52","36.01","36.11","41.10","42.52"
+"Utilities","44.35","46.53","46.80","48.44","52.22"
+"Construction","31.02","31.51","31.91","34.26","35.85"
+"Manufacturing","26.92","28.64","28.48","30.30","32.91"
+"Services-producing sector 11","26.45","28.17","29.06","30.59","31.82"
+"Wholesale and retail trade","19.99","21.41","22.22","23.91","24.91"
+"Transportation and warehousing","26.24","26.99","28.55","29.42","30.02"
+"Finance, insurance, real estate, rental and leasing","33.00","34.61","35.99","37.15","39.32"
+"Professional, scientific and technical services","33.37","36.05","34.95","38.39","40.23"
+"Business, building and other support services 12","20.93","21.90","22.88","25.15","25.42"
+"Educational services","35.48","35.98","36.11","37.18","39.10"
+"Health care and social assistance","26.12","27.08","27.51","29.46","30.27"
+"Information, culture and recreation","26.36","30.04","30.19","30.76","31.12"
+"Accommodation and food services","16.31","16.52","17.03","18.14","20.28"
+"Other services (except public administration)","21.59","24.10","24.83","26.62","28.49"
+"Public administration","36.36","36.85","38.35","39.34","41.19"
+
+
+
+
+Footnotes:
+1,"To ensure respondent confidentiality, estimates below a certain threshold are suppressed. For Canada, Quebec, Ontario, Alberta and British Columbia suppression is applied to all data below 1,500. The threshold level for Newfoundland and Labrador, Nova Scotia, New Brunswick, Manitoba and Saskatchewan is 500, while in Prince Edward Island, estimates under 200 are supressed. For census metropolitan areas (CMAs) and economic regions (ERs), use their respective provincial suppression levels mentioned above. Estimates are based on smaller sample sizes the more detailed the table becomes, which could result in lower data quality."
+2,"Starting in 2006, enhancements to the Labour Force Survey data processing system may have introduced a level shift in some estimates, particularly for less common labour force characteristics. Use caution when comparing estimates before and after 2006. For more information, contact statcan.labour-travail.statcan@statcan.gc.ca"
+3,"Excluding the territories."
+4,"Beginning January 1997, information is collected on the usual wages or salary of employees at their main job. Respondents are asked to report their wage/salary before taxes and other deductions, and include tips, commissions and bonuses. Weekly and hourly wages/salaries are calculated in conjunction with usual paid work hours per week. Starting in 2006, enhancements to the Labour Force Survey processing system have introduced a level shift in average and median wages. Use caution when comparing estimates before and after 2006. For more information, contact statcan.labour-travail.statcan@statcan.gc.ca"
+5,"Industry refers to the general nature of the business carried out by the employer for whom the respondent works (main job only). In January 1999, the industry classification switched from Standard Industrial Classification (SIC 1980) to North American Industrial Classification System (NAICS), which was quite different. For this reason, detailed historical data based on NAICS is provided going back to January 1987. Historical data have been created by imputation. Industry estimates in this table are based on the 2017 North American Industry Classification System (NAICS)."
+6,"This combines the North American Industry Classification System (NAICS) codes 11 to 91."
+7,"This combines the North American Industry Classification System (NAICS) codes 11 to 33."
+8,"Labour Force Survey (LFS) North American Industry Classification System (NAICS) code exception: add group 1100 - Farming - not elsewhere classified (nec). When the type of farm activity cannot be distinguished between crop and livestock, (example: mixed farming)."
+9,"Labour Force Survey (LFS) North American Industry Classification System (NAICS) code exception: add group 2100 - Mining - not elsewhere classified (nec). Whenever the type of mining activity cannot be distinguished."
+10,"Also referred to as Natural resources."
+11,"This combines the North American Industry Classification System (NAICS) codes 41 to 91."
+12,"Formerly "Management of companies and administrative and other support services"."
+
+
+
+"How to cite: Statistics Canada. Table 14-10-0064-01  Employee wages by industry, annual"
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410006401
