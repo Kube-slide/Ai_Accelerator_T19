@@ -26,11 +26,16 @@ enrollment = pd.read_csv('Data/Enrollment.csv', delimiter=',')
 graduates = pd.read_csv('Data/Graduates.csv', delimiter=',')
 
 merged_data = pd.merge(enrollment, graduates, on=['Field of study'], how='inner')
+merged_data = merged_data.merge(medianIncome, on=['Field of study'], how='left')
+merged_data['MedianIncome'] = pd.to_numeric(merged_data['MedianIncome'], errors='coerce')
+
 years = [col.split('_')[0] for col in merged_data.columns if '_x' in col]
 
 for col in merged_data.columns:
     if '_x' in col or '_y' in col:
         merged_data[col] = pd.to_numeric(merged_data[col], errors='coerce')
+
+
 
 for year in years:
     enroll_col = f"{year}_x"
@@ -40,5 +45,6 @@ for year in years:
     if enroll_col in merged_data.columns and grad_col in merged_data.columns:
         merged_data[dropout_col] = ((merged_data[enroll_col] - merged_data[grad_col]) / merged_data[enroll_col]) * 100
 
-scaler = StandardScaler()
-scaled_features = scaler.fit_transform(merged_data[[enroll_col, grad_col]])
+print(merged_data.head())
+##scaler = StandardScaler()
+##scaled_features = scaler.fit_transform(merged_data[[enroll_col, grad_col]])
