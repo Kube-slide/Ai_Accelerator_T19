@@ -1,16 +1,16 @@
 ﻿Field of study,2017,2018,2019,2020,2021
-"Total, field of study",214383.00,214530.00,214776.00,218691.00,218553.00
-Personal improvement and leisure  [0],..,..,..,..,..
-Education  [1],7587.00,7938.00,8328.00,8850.00,8844.00
-"Visual and performing arts, and communications technologies  [2]",11805.00,11892.00,11946.00,12276.00,12600.00
-Humanities  [3],57144.00,56574.00,55824.00,57633.00,55995.00
-Social and behavioural sciences and law  [4],10389.00,10293.00,9999.00,9672.00,9309.00
-"Business, management and public administration  [5]",29922.00,30369.00,29517.00,28428.00,28197.00
-Physical and life sciences and technologies  [6],27204.00,27234.00,27603.00,28782.00,29007.00
-"Mathematics, computer and information sciences  [7]",7128.00,8631.00,11391.00,13119.00,14883.00
-"Architecture, engineering and related technologies  [8]",12786.00,12618.00,12336.00,12288.00,11790.00
-"Agriculture, natural resources and conservation  [9]",1890.00,1974.00,2049.00,2133.00,2307.00
-Health and related fields  [10],24717.00,23961.00,23685.00,23469.00,24138.00
-"Personal, protective and transportation services  [11]",6093.00,6222.00,6315.00,6714.00,6684.00
-Other   [12] 8,17091.00,16326.00,15366.00,15030.00,14559.00
-Unclassified 9,624.00,504.00,405.00,303.00,246.00
+"Total, field of study",214383,214530,214776,218691,218553
+Personal improvement and leisure,..,..,..,..,..
+Education,7587,7938,8328,8850,8844
+"Visual and performing arts, and communications technologies",11805,11892,11946,12276,12600
+Humanities,57144,56574,55824,57633,55995
+Social and behavioural sciences and law,10389,10293,9999,9672,9309
+"Business, management and public administration",29922,30369,29517,28428,28197
+Physical and life sciences and technologies,27204,27234,27603,28782,29007
+"Mathematics, computer and information sciences",7128,8631,11391,13119,14883
+"Architecture, engineering and related technologies",12786,12618,12336,12288,11790
+"Agriculture, natural resources and conservation",1890,1974,2049,2133,2307
+Health and related fields,24717,23961,23685,23469,24138
+"Personal, protective and transportation services",6093,6222,6315,6714,6684
+Other,17091,16326,15366,15030,14559
+Unclassified,624,504,405,303,246
