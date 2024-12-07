@@ -17,6 +17,8 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import mean_squared_error
 from sympy.polys.rootisolation import dup_root_upper_bound
 import bs4
+from bs4 import BeautifulSoup
+import requests
 from langchain import hub
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import WebBaseLoader
@@ -27,12 +29,25 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.llms import Ollama
+import json
+
+with open('programLinks.json', 'r') as file:
+    data = json.load(file)
+
+all_links = []
+for main_site, sub_sites in data.items():
+    all_links.extend(sub_sites)
 
 llm = Ollama(model="llama3")
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
-loader = WebBaseLoader("https://johnabbott.qc.ca/career-programs/computer-science-technology/")
-docs = loader.load()
+num = 0
+
+for sites in all_links:
+    loader = WebBaseLoader(sites)
+    docs = loader.load()
+    num = num + 1
+    print(f"There are {len(all_links) - num} left to check")
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 split_documents = text_splitter.split_documents(docs)
@@ -67,9 +82,6 @@ rag_chain = (
     | llm
     | StrOutputParser()
 )
-
-result = rag_chain.invoke("Using the url, what are some hobbies / interests one should have if they wish to pursue a career in computer science at john abbott college?")
-print(result)
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -114,8 +126,6 @@ model.fit(X, Y)
 
 grouped = merged_data.groupby('2020_dropout')['MedianIncome'].mean()
 
-
-
 desired_difficulty = int(input("Enter your desired program difficulty level [1-5]: "))
 desired_difficulty = desired_difficulty * 5 + 60
 desired_median_income = int(input("Enter your desired median income [$]: "))
@@ -125,3 +135,15 @@ merged_data['similarity_score'] = np.sqrt(
     (merged_data['MedianIncome'] - desired_median_income) ** 2)
 
 top_matches = merged_data.sort_values(by='similarity_score').head(5)
+
+hobbiesAndInterests = input("Enter a list of your hobbies and interests : ")
+
+result = rag_chain.invoke(f"Using the provided links, this list of top matches for the users programs {top_matches}, and this list of their "
+f"hobbies :  {hobbiesAndInterests}, narrow down the amount of programs to just the top three most relatable programs they might be interested in"
+f"Only output what programs the user would possiblyy like (Do not explain the program), and add a like-ability rating to them as well."
+f"Avoid meaningless text. Just output the program names and the like-ability rating as a percentage. Make sure that you do not target"
+f"one specific CEGEP or college, but instead focus on programs that can be found in multiple CEGEPS.")
+
+print(result)
+
+
